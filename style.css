@@ -6,9 +6,32 @@ body {
     line-height: 1.5;
     color: #495057;
     text-align: left;
-    background-color: #6200ea;
 }
 
+.quotes {
+    width: 50%;
+    margin: auto;
+    background: lightgray;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 60px;
+    text-align: center;
+}
+#quotes::after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    font-size: 20px;
+    margin-left: 20px;
+    color: brown;
+}
+#quotes::before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 20px;
+    margin-right: 20px;
+    color: brown;
+}
 i {
     font-style: italic;
 }
@@ -135,6 +158,7 @@ i {
 .btn {
     position: relative;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+    padding: 10px;
 }
 
 .btn-outline-success {
